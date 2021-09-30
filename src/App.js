@@ -1,13 +1,22 @@
-import './App.css';
+import React from 'react'
+import AppHeader from './components/AppHeader';
+import Biography from './components/Biography';
+import SVG from './components/SVG';
+import AutoWriteText from './components/AutoWriteText';
+import Expertise from './components/Expertise';
+import Projects from './components/Projects'
+import Footer from './components/Footer';
 
-
-
-function App() {  
- 
+function App() {
   return (
     <div className="App">
-      <h1>This is the air I breathe in the air.</h1>
-      <h2>I love my daughter so much.</h2>
+      <AppHeader/>
+      <AutoWriteText/>
+      <Biography/>
+      <SVG/>
+      <Expertise/>
+      <Projects />
+      <Footer/>
     </div>
   );
 }

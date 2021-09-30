@@ -1,30 +1,140 @@
-body {
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+@media screen and (max-width: 500px) {
+  .appBar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* background-color: rgb(253, 253, 253); */
+    background-color: #f9f9f9;
+    height: 60px;
+    justify-content: center;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding: 1.2em;
+    align-self: baseline;
+    box-shadow: 5px 0px 5px 10px #999;
+    cursor: pointer;
+    position: fixed;
+    width: 100%;
+  }
 
-input {
-  margin: 10px;
-  padding: 10px;
-}
+  .paper {
+    margin: 40px auto;
+    width: 90vw;
+    height: auto;
+    padding: 0.5rem;
+  }
 
-button {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  cursor: pointer;
-  background-color: #196d06;
-  color: aliceblue;
+  .bio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.5rem;
+    background-color: #fefeff;
+    height: 80%;
+    padding: 1em;
+    text-align: start;
+  }
+
+  .background-image-container {
+    width: 100vw;
+    height: 250px;
+  }
+
+  .background-image-container h3 {
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 30px;
+  }
+
+  .btn {
+    margin: 20px;
+    padding: 10px;
+    color: rgb(63, 81, 181);
+    border: 1px solid rgb(63, 81, 181);
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .bio-part2 {
+    font-size: 18px;
+  }
+
+  .expertise {
+    width: 100vw;
+    height: auto;
+    padding: 1rem;
+    margin: 3rem 0;
+    background-color: rgb(63, 81, 181);
+    color: white;
+    font-size: 18px;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 300px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .img img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+  }
+
+  .img-description h3 {
+    color: #333;
+    font-weight: normal;
+    text-align: start;
+    font-size: 20px;
+    padding-left: 15px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .projects {
+    padding: 1em;
+    font-size: 18px;
+  }
+
+  .svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin: 10px auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .svg-container img {
+    width: 90%;
+    height: inherit;
+    margin: 10px auto;
+  }
+
+  .social-media-handles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -25px;
+  }
 }
